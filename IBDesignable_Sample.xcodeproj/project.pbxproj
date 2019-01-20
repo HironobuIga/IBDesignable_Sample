@@ -14,9 +14,36 @@
 		1E907A8B21F06F0A007744B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E907A8921F06F0A007744B7 /* LaunchScreen.storyboard */; };
 		1E907A9721F41738007744B7 /* SampleDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E907A9621F41738007744B7 /* SampleDataFactory.swift */; };
 		1E907A9921F41768007744B7 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E907A9821F41768007744B7 /* SampleData.swift */; };
-		1E907A9C21F42644007744B7 /* SubCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E907A9B21F42644007744B7 /* SubCardView.xib */; };
-		1E907A9E21F4290B007744B7 /* SubCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E907A9D21F4290B007744B7 /* SubCardView.swift */; };
+		1E907AA821F47E7A007744B7 /* UIComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E907AA621F47E79007744B7 /* UIComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E907AAB21F47E7A007744B7 /* UIComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E907AA421F47E79007744B7 /* UIComponent.framework */; };
+		1E907AAC21F47E7A007744B7 /* UIComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E907AA421F47E79007744B7 /* UIComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E907AB221F47EFA007744B7 /* SubCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E907AB121F47EFA007744B7 /* SubCardView.swift */; };
+		1E907AB421F47F07007744B7 /* SubCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E907AB321F47F07007744B7 /* SubCardView.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E907AA921F47E7A007744B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E907A7521F06F09007744B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E907AA321F47E79007744B7;
+			remoteInfo = UIComponent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E907AB021F47E7A007744B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E907AAC21F47E7A007744B7 /* UIComponent.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1E907A7D21F06F09007744B7 /* IBDesignable_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBDesignable_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,12 +55,23 @@
 		1E907A8C21F06F0A007744B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E907A9621F41738007744B7 /* SampleDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataFactory.swift; sourceTree = "<group>"; };
 		1E907A9821F41768007744B7 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
-		1E907A9B21F42644007744B7 /* SubCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCardView.xib; sourceTree = "<group>"; };
-		1E907A9D21F4290B007744B7 /* SubCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCardView.swift; sourceTree = "<group>"; };
+		1E907AA421F47E79007744B7 /* UIComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E907AA621F47E79007744B7 /* UIComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponent.h; sourceTree = "<group>"; };
+		1E907AA721F47E7A007744B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E907AB121F47EFA007744B7 /* SubCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCardView.swift; sourceTree = "<group>"; };
+		1E907AB321F47F07007744B7 /* SubCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubCardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1E907A7A21F06F09007744B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E907AAB21F47E7A007744B7 /* UIComponent.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E907AA121F47E79007744B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				1E907A7F21F06F09007744B7 /* IBDesignable_Sample */,
+				1E907AA521F47E79007744B7 /* UIComponent */,
 				1E907A7E21F06F09007744B7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				1E907A7D21F06F09007744B7 /* IBDesignable_Sample.app */,
+				1E907AA421F47E79007744B7 /* UIComponent.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,7 +131,6 @@
 		1E907A9421F06FCA007744B7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1E907A9A21F42609007744B7 /* View */,
 				1E907A8221F06F09007744B7 /* ViewController.swift */,
 				1E907A8421F06F09007744B7 /* ViewController.storyboard */,
 			);
@@ -107,16 +146,37 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		1E907A9A21F42609007744B7 /* View */ = {
+		1E907A9A21F42609007744B7 /* SubCardView */ = {
 			isa = PBXGroup;
 			children = (
-				1E907A9D21F4290B007744B7 /* SubCardView.swift */,
-				1E907A9B21F42644007744B7 /* SubCardView.xib */,
+				1E907AB121F47EFA007744B7 /* SubCardView.swift */,
+				1E907AB321F47F07007744B7 /* SubCardView.xib */,
 			);
-			path = View;
+			path = SubCardView;
+			sourceTree = "<group>";
+		};
+		1E907AA521F47E79007744B7 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				1E907A9A21F42609007744B7 /* SubCardView */,
+				1E907AA621F47E79007744B7 /* UIComponent.h */,
+				1E907AA721F47E7A007744B7 /* Info.plist */,
+			);
+			path = UIComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1E907A9F21F47E79007744B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E907AA821F47E7A007744B7 /* UIComponent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1E907A7C21F06F09007744B7 /* IBDesignable_Sample */ = {
@@ -126,15 +186,35 @@
 				1E907A7921F06F09007744B7 /* Sources */,
 				1E907A7A21F06F09007744B7 /* Frameworks */,
 				1E907A7B21F06F09007744B7 /* Resources */,
+				1E907AB021F47E7A007744B7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1E907AAA21F47E7A007744B7 /* PBXTargetDependency */,
 			);
 			name = IBDesignable_Sample;
 			productName = IBDesignable_Sample;
 			productReference = 1E907A7D21F06F09007744B7 /* IBDesignable_Sample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1E907AA321F47E79007744B7 /* UIComponent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E907AAD21F47E7A007744B7 /* Build configuration list for PBXNativeTarget "UIComponent" */;
+			buildPhases = (
+				1E907A9F21F47E79007744B7 /* Headers */,
+				1E907AA021F47E79007744B7 /* Sources */,
+				1E907AA121F47E79007744B7 /* Frameworks */,
+				1E907AA221F47E79007744B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIComponent;
+			productName = UIComponent;
+			productReference = 1E907AA421F47E79007744B7 /* UIComponent.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -148,6 +228,10 @@
 				TargetAttributes = {
 					1E907A7C21F06F09007744B7 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					1E907AA321F47E79007744B7 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -165,6 +249,7 @@
 			projectRoot = "";
 			targets = (
 				1E907A7C21F06F09007744B7 /* IBDesignable_Sample */,
+				1E907AA321F47E79007744B7 /* UIComponent */,
 			);
 		};
 /* End PBXProject section */
@@ -177,7 +262,14 @@
 				1E907A8B21F06F0A007744B7 /* LaunchScreen.storyboard in Resources */,
 				1E907A8821F06F0A007744B7 /* Assets.xcassets in Resources */,
 				1E907A8621F06F09007744B7 /* ViewController.storyboard in Resources */,
-				1E907A9C21F42644007744B7 /* SubCardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E907AA221F47E79007744B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E907AB421F47F07007744B7 /* SubCardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E907A9E21F4290B007744B7 /* SubCardView.swift in Sources */,
 				1E907A9721F41738007744B7 /* SampleDataFactory.swift in Sources */,
 				1E907A8321F06F09007744B7 /* ViewController.swift in Sources */,
 				1E907A8121F06F09007744B7 /* AppDelegate.swift in Sources */,
@@ -196,7 +287,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E907AA021F47E79007744B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E907AB221F47EFA007744B7 /* SubCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E907AAA21F47E7A007744B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E907AA321F47E79007744B7 /* UIComponent */;
+			targetProxy = 1E907AA921F47E7A007744B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1E907A8421F06F09007744B7 /* ViewController.storyboard */ = {
@@ -337,6 +444,7 @@
 		1E907A9021F06F0A007744B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y827F3LXSQ;
@@ -355,6 +463,7 @@
 		1E907A9121F06F0A007744B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y827F3LXSQ;
@@ -367,6 +476,65 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E907AAE21F47E7A007744B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y827F3LXSQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UIComponent/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iganin.UIComponent;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E907AAF21F47E7A007744B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y827F3LXSQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UIComponent/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iganin.UIComponent;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -387,6 +555,15 @@
 			buildConfigurations = (
 				1E907A9021F06F0A007744B7 /* Debug */,
 				1E907A9121F06F0A007744B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E907AAD21F47E7A007744B7 /* Build configuration list for PBXNativeTarget "UIComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E907AAE21F47E7A007744B7 /* Debug */,
+				1E907AAF21F47E7A007744B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

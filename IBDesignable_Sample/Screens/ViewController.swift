@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UIComponent
 
 final class ViewController: UIViewController {
     // MARK: - IBOutlet
@@ -55,8 +56,14 @@ private extension ViewController {
     
     func setupSubParts() {
         let subDataList = SampleDataFactory.makeSubDataList()
-        subCardViews.enumerated().forEach { (index, subcardView) in
-            subcardView.configure(withSampleData: subDataList[index])
+        subCardViews.enumerated().forEach { (index, subCardview) in
+            let data = subDataList[index]
+            subCardview.configure(
+                withImageName: data.imageName,
+                name: data.name,
+                category: data.category,
+                outlineText: data.outlineText
+            )
         }
     }
 }

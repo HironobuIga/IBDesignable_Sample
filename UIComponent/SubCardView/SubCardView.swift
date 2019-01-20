@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-final class SubCardView: UIView {
+final public class SubCardView: UIView {
     
     // MARK: - IBOutlet
     @IBOutlet private weak var cardView: UIView!
@@ -66,14 +66,14 @@ final class SubCardView: UIView {
         instantiateFromNib()
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         // 初期化時に実行したい処理を記述
         // この時点ではnibは読み込まれ@IBOutletのプロパティは存在
         super.awakeFromNib()
         commonInit()
     }
     
-    override func prepareForInterfaceBuilder() {
+    override public func prepareForInterfaceBuilder() {
         // 初期化時に実行したい処理を記述
         // InterfaceBuilder上ではawakeFromNibなどは処理されないため
         // こちらに初期化時で表示に関連する処理を書く
@@ -83,11 +83,14 @@ final class SubCardView: UIView {
     }
     
     // MARK: - Function
-    func configure(withSampleData data: SampleData) {
-        image = UIImage(named: data.imageName)
-        name = data.name
-        category = data.category
-        outlineText = data.outlineText
+    public func configure(
+        withImageName imageName: String,
+        name: String, category: String, outlineText: String
+        ) {
+        image = UIImage(named: imageName)
+        self.name = name
+        self.category = category
+        self.outlineText = outlineText
     }
 }
 

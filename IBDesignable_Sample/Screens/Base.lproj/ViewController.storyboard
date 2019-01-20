@@ -107,7 +107,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="lNL-dh-T7j" secondAttribute="bottom" constant="8" id="v3c-Pe-Q90"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3e9-w0-8Cw" customClass="SubCardView" customModule="IBDesignable_Sample" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3e9-w0-8Cw" customClass="SubCardView" customModule="UIComponent">
                                                 <rect key="frame" x="0.0" y="394" width="375" height="166"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -127,7 +127,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="outlineText" value="Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABM-Ed-28J" customClass="SubCardView" customModule="IBDesignable_Sample" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABM-Ed-28J" customClass="SubCardView" customModule="UIComponent">
                                                 <rect key="frame" x="0.0" y="560" width="375" height="166"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -147,7 +147,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="category" value="鳥綱フクロウ目フクロウ科フクロウ属"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCu-nA-ZqU" customClass="SubCardView" customModule="IBDesignable_Sample" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCu-nA-ZqU" customClass="SubCardView" customModule="UIComponent">
                                                 <rect key="frame" x="0.0" y="726" width="375" height="166"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -167,7 +167,7 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="category" value="哺乳綱偶蹄目シカ科シカ属"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1I-ve-fRQ" customClass="SubCardView" customModule="IBDesignable_Sample" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1I-ve-fRQ" customClass="SubCardView" customModule="UIComponent">
                                                 <rect key="frame" x="0.0" y="892" width="375" height="166"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>

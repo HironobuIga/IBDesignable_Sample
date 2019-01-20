@@ -9,7 +9,7 @@
 import Foundation
 
 /// 画面表示用サンプルデータ
-struct SampleData: Codable {
+public struct SampleData: Codable {
     let imageName: String
     let name: String
     let category: String
