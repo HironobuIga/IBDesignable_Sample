@@ -30,7 +30,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBDesignable_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3N-GX-JZs" userLabel="Navigation Bar Space View">
@@ -38,7 +38,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FP3-QW-jjK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1700"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kal-bb-RPl" userLabel="Image Container">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
@@ -51,20 +51,20 @@
                                         <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="47o-6v-Wc8">
-                                        <rect key="frame" x="0.0" y="200" width="375" height="1138"/>
+                                        <rect key="frame" x="0.0" y="200" width="375" height="1266"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hlb-Z2-4zn" userLabel="Name Base View">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食肉目/ネコ科/ネコ属" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kou-Cq-Zgi">
                                                         <rect key="frame" x="16" y="42" width="343" height="76"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5R-WX-Puf">
                                                         <rect key="frame" x="16" y="10" width="343" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -99,13 +99,31 @@
                                                     <constraint firstItem="JzN-Ot-xYA" firstAttribute="leading" secondItem="Xse-kZ-Zgd" secondAttribute="leading" constant="16" id="nIi-xt-Mfj"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5m-kG-WK2" userLabel="Similar Animal Base View">
-                                                <rect key="frame" x="0.0" y="266" width="375" height="218"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ti-BZ-qlk" userLabel="Other Base View">
+                                                <rect key="frame" x="0.0" y="266" width="375" height="128"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcF-wd-mEM">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="その他の動植物" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNL-dh-T7j">
+                                                        <rect key="frame" x="16" y="8" width="343" height="112"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="lNL-dh-T7j" secondAttribute="trailing" constant="16" id="Da0-Te-IrL"/>
+                                                    <constraint firstItem="lNL-dh-T7j" firstAttribute="leading" secondItem="4ti-BZ-qlk" secondAttribute="leading" constant="16" id="gP1-U0-0g7"/>
+                                                    <constraint firstItem="lNL-dh-T7j" firstAttribute="top" secondItem="4ti-BZ-qlk" secondAttribute="top" constant="8" id="iYC-AC-bK7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lNL-dh-T7j" secondAttribute="bottom" constant="8" id="v3c-Pe-Q90"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5m-kG-WK2" userLabel="Sub Base View">
+                                                <rect key="frame" x="0.0" y="394" width="375" height="218"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcF-wd-mEM" userLabel="Card View">
                                                         <rect key="frame" x="16" y="10" width="343" height="198"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_picture" translatesAutoresizingMaskIntoConstraints="NO" id="hLL-3X-yHM">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sakura_picture" translatesAutoresizingMaskIntoConstraints="NO" id="hLL-3X-yHM">
                                                                 <rect key="frame" x="8" y="10" width="80" height="80"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="80" id="3zY-6y-gGe"/>
@@ -118,7 +136,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgP-Z6-Dqz" userLabel="Name Base View">
                                                                         <rect key="frame" x="0.0" y="0.0" width="239" height="50"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-wO-vR8">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さくら" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-wO-vR8">
                                                                                 <rect key="frame" x="8" y="4" width="223" height="42"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                 <nil key="textColor"/>
@@ -136,7 +154,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlC-Li-6Fs" userLabel="Category  Base View">
                                                                         <rect key="frame" x="0.0" y="50" width="239" height="78"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食肉目/ネコ科/ネコ属" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ci-An-ghm">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="バラ科モモ亜科スモモ属" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ci-An-ghm">
                                                                                 <rect key="frame" x="8" y="4" width="223" height="70"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                 <nil key="textColor"/>
@@ -151,7 +169,7 @@
                                                                             <constraint firstItem="5ci-An-ghm" firstAttribute="leading" secondItem="qlC-Li-6Fs" secondAttribute="leading" constant="8" id="cXJ-xy-GmE"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wT6-Gf-1qV">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wT6-Gf-1qV" userLabel="Outline Base View">
                                                                         <rect key="frame" x="0.0" y="128" width="239" height="50"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g94-ot-sYB">
@@ -192,13 +210,13 @@
                                                     <constraint firstAttribute="trailing" secondItem="pcF-wd-mEM" secondAttribute="trailing" constant="16" id="fb5-xY-iji"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ex-Qc-HOK" userLabel="Similar Animal Base View">
-                                                <rect key="frame" x="0.0" y="484" width="375" height="218"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ex-Qc-HOK" userLabel="Sub Base View">
+                                                <rect key="frame" x="0.0" y="612" width="375" height="218"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kvs-Cl-0aI">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kvs-Cl-0aI" userLabel="Card View">
                                                         <rect key="frame" x="16" y="10" width="343" height="198"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_picture" translatesAutoresizingMaskIntoConstraints="NO" id="aXV-ia-feo">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hukurou_picture" translatesAutoresizingMaskIntoConstraints="NO" id="aXV-ia-feo">
                                                                 <rect key="frame" x="8" y="10" width="80" height="80"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="80" id="oWU-de-kZg"/>
@@ -211,7 +229,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiM-r7-gt8" userLabel="Name Base View">
                                                                         <rect key="frame" x="0.0" y="0.0" width="239" height="50"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9m-xJ-OIc">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フクロウ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9m-xJ-OIc">
                                                                                 <rect key="frame" x="8" y="4" width="223" height="42"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                 <nil key="textColor"/>
@@ -229,7 +247,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCj-aA-KPr" userLabel="Category  Base View">
                                                                         <rect key="frame" x="0.0" y="50" width="239" height="78"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食肉目/ネコ科/ネコ属" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ek-po-YZy">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鳥綱フクロウ目フクロウ科フクロウ属" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ek-po-YZy">
                                                                                 <rect key="frame" x="8" y="4" width="223" height="70"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                 <nil key="textColor"/>
@@ -244,7 +262,7 @@
                                                                             <constraint firstAttribute="trailing" secondItem="6ek-po-YZy" secondAttribute="trailing" constant="8" id="m60-13-FnY"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8K-nI-hSB">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8K-nI-hSB" userLabel="Outline Base View">
                                                                         <rect key="frame" x="0.0" y="128" width="239" height="50"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIn-Xe-CN2">
@@ -285,13 +303,13 @@
                                                     <constraint firstAttribute="trailing" secondItem="Kvs-Cl-0aI" secondAttribute="trailing" constant="16" id="QGO-Op-aL5"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIp-m6-2uL" userLabel="Similar Animal Base View">
-                                                <rect key="frame" x="0.0" y="702" width="375" height="218"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIp-m6-2uL" userLabel="Sub Base View">
+                                                <rect key="frame" x="0.0" y="830" width="375" height="218"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acJ-MS-bag">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acJ-MS-bag" userLabel="Card View">
                                                         <rect key="frame" x="16" y="10" width="343" height="198"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_picture" translatesAutoresizingMaskIntoConstraints="NO" id="ctE-Or-GEv">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shika_picture" translatesAutoresizingMaskIntoConstraints="NO" id="ctE-Or-GEv">
                                                                 <rect key="frame" x="8" y="10" width="80" height="80"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="80" id="0Eb-JL-NMI"/>
@@ -304,7 +322,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XwI-Ys-s7Z" userLabel="Name Base View">
                                                                         <rect key="frame" x="0.0" y="0.0" width="239" height="50"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOn-PK-6C3">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="シカ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOn-PK-6C3">
                                                                                 <rect key="frame" x="8" y="4" width="223" height="42"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                 <nil key="textColor"/>
@@ -322,7 +340,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssv-Zs-BKq" userLabel="Category  Base View">
                                                                         <rect key="frame" x="0.0" y="50" width="239" height="78"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食肉目/ネコ科/ネコ属" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uah-h3-6I9">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哺乳綱偶蹄目シカ科シカ属" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uah-h3-6I9">
                                                                                 <rect key="frame" x="8" y="4" width="223" height="70"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                 <nil key="textColor"/>
@@ -337,7 +355,7 @@
                                                                             <constraint firstItem="uah-h3-6I9" firstAttribute="leading" secondItem="ssv-Zs-BKq" secondAttribute="leading" constant="8" id="yXT-4o-ThH"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="plO-Rp-DRm">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="plO-Rp-DRm" userLabel="Outline Base View">
                                                                         <rect key="frame" x="0.0" y="128" width="239" height="50"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSM-xa-1zg">
@@ -378,13 +396,13 @@
                                                     <constraint firstAttribute="bottom" secondItem="acJ-MS-bag" secondAttribute="bottom" constant="10" id="ug2-K3-K4l"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lda-zU-tAV" userLabel="Similar Animal Base View">
-                                                <rect key="frame" x="0.0" y="920" width="375" height="218"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lda-zU-tAV" userLabel="Sub Base View">
+                                                <rect key="frame" x="0.0" y="1048" width="375" height="218"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUe-M1-GCi">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUe-M1-GCi" userLabel="Card View">
                                                         <rect key="frame" x="16" y="10" width="343" height="198"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_picture" translatesAutoresizingMaskIntoConstraints="NO" id="KaB-h1-hM6">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana_picture" translatesAutoresizingMaskIntoConstraints="NO" id="KaB-h1-hM6">
                                                                 <rect key="frame" x="8" y="10" width="80" height="80"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="80" id="NuF-Jb-kMC"/>
@@ -397,7 +415,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wa2-gK-q5l" userLabel="Name Base View">
                                                                         <rect key="frame" x="0.0" y="0.0" width="239" height="50"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dw-bK-JaZ">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="バナナ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dw-bK-JaZ">
                                                                                 <rect key="frame" x="8" y="4" width="223" height="42"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                 <nil key="textColor"/>
@@ -415,7 +433,7 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHn-zR-x8V" userLabel="Category  Base View">
                                                                         <rect key="frame" x="0.0" y="50" width="239" height="78"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食肉目/ネコ科/ネコ属" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9p-OX-T58">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="バショウ科バショウ属" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9p-OX-T58">
                                                                                 <rect key="frame" x="8" y="4" width="223" height="70"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                 <nil key="textColor"/>
@@ -430,7 +448,7 @@
                                                                             <constraint firstItem="k9p-OX-T58" firstAttribute="top" secondItem="wHn-zR-x8V" secondAttribute="top" constant="4" id="kNf-RW-Vgt"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bs-iT-c8Q">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bs-iT-c8Q" userLabel="Outline Base View">
                                                                         <rect key="frame" x="0.0" y="128" width="239" height="50"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NA-A3-BIH">
@@ -511,9 +529,33 @@
                     </view>
                     <navigationItem key="navigationItem" id="o0s-uo-f42"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="1300"/>
+                    <size key="freeformSize" width="375" height="1700"/>
                     <connections>
+                        <outlet property="headerImageView" destination="Dmq-2F-XcM" id="gde-kf-rIK"/>
+                        <outlet property="mainCategoryLabel" destination="Kou-Cq-Zgi" id="LSv-T1-jz1"/>
+                        <outlet property="mainNameLabel" destination="b5R-WX-Puf" id="KVb-00-BEz"/>
+                        <outlet property="mainOutlineLabel" destination="JzN-Ot-xYA" id="bWW-iY-NJP"/>
                         <outlet property="scrollView" destination="FP3-QW-jjK" id="OWH-UV-GvG"/>
+                        <outletCollection property="subImageViews" destination="hLL-3X-yHM" collectionClass="NSMutableArray" id="upP-dl-rKm"/>
+                        <outletCollection property="subImageViews" destination="aXV-ia-feo" collectionClass="NSMutableArray" id="ngd-IR-U1n"/>
+                        <outletCollection property="subImageViews" destination="ctE-Or-GEv" collectionClass="NSMutableArray" id="nut-NP-ceC"/>
+                        <outletCollection property="subImageViews" destination="KaB-h1-hM6" collectionClass="NSMutableArray" id="bXH-oR-HjL"/>
+                        <outletCollection property="subNameLabels" destination="eXH-wO-vR8" collectionClass="NSMutableArray" id="j4O-MS-0AK"/>
+                        <outletCollection property="subNameLabels" destination="U9m-xJ-OIc" collectionClass="NSMutableArray" id="SAW-zS-xhW"/>
+                        <outletCollection property="subNameLabels" destination="pOn-PK-6C3" collectionClass="NSMutableArray" id="JDJ-xH-XmW"/>
+                        <outletCollection property="subNameLabels" destination="7Dw-bK-JaZ" collectionClass="NSMutableArray" id="2uM-zD-hcP"/>
+                        <outletCollection property="subCategoryLabels" destination="5ci-An-ghm" collectionClass="NSMutableArray" id="kD5-XB-HN3"/>
+                        <outletCollection property="subCategoryLabels" destination="6ek-po-YZy" collectionClass="NSMutableArray" id="kbU-Mo-lc6"/>
+                        <outletCollection property="subCategoryLabels" destination="uah-h3-6I9" collectionClass="NSMutableArray" id="KiC-eb-zOQ"/>
+                        <outletCollection property="subCategoryLabels" destination="k9p-OX-T58" collectionClass="NSMutableArray" id="dak-lT-dh3"/>
+                        <outletCollection property="subOutlineLabels" destination="g94-ot-sYB" collectionClass="NSMutableArray" id="kvh-nT-I0h"/>
+                        <outletCollection property="subOutlineLabels" destination="VIn-Xe-CN2" collectionClass="NSMutableArray" id="PaU-Fg-laK"/>
+                        <outletCollection property="subOutlineLabels" destination="XSM-xa-1zg" collectionClass="NSMutableArray" id="n1v-Rh-25F"/>
+                        <outletCollection property="subOutlineLabels" destination="9NA-A3-BIH" collectionClass="NSMutableArray" id="ep2-23-yQJ"/>
+                        <outletCollection property="subBaseViews" destination="pcF-wd-mEM" collectionClass="NSMutableArray" id="HGs-Jb-2S5"/>
+                        <outletCollection property="subBaseViews" destination="Kvs-Cl-0aI" collectionClass="NSMutableArray" id="gdH-Tv-k5K"/>
+                        <outletCollection property="subBaseViews" destination="acJ-MS-bag" collectionClass="NSMutableArray" id="44z-xo-7QV"/>
+                        <outletCollection property="subBaseViews" destination="lUe-M1-GCi" collectionClass="NSMutableArray" id="iwO-cm-6t7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -522,6 +564,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="banana_picture" width="789" height="1052.383544921875"/>
         <image name="cat_picture" width="263" height="174"/>
+        <image name="hukurou_picture" width="789" height="1052.383544921875"/>
+        <image name="sakura_picture" width="789" height="1052.383544921875"/>
+        <image name="shika_picture" width="789" height="591.78082275390625"/>
     </resources>
 </document>
