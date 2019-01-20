@@ -81,6 +81,14 @@ final class SubCardView: UIView {
         super.prepareForInterfaceBuilder()
         commonInit()
     }
+    
+    // MARK: - Function
+    func configure(withSampleData data: SampleData) {
+        image = UIImage(named: data.imageName)
+        name = data.name
+        category = data.category
+        outlineText = data.outlineText
+    }
 }
 
 // MARK: - Private Function

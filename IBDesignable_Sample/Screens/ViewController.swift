@@ -17,11 +17,7 @@ final class ViewController: UIViewController {
     @IBOutlet weak var mainCategoryLabel: UILabel!
     @IBOutlet weak var mainOutlineLabel: UILabel!
     
-    @IBOutlet var subBaseViews: [UIView]!
-    @IBOutlet var subImageViews: [UIImageView]!
-    @IBOutlet var subNameLabels: [UILabel]!
-    @IBOutlet var subCategoryLabels: [UILabel]!
-    @IBOutlet var subOutlineLabels: [UILabel]!
+    @IBOutlet var subCardViews: [SubCardView]!
     
     // MARK: - Property
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
@@ -59,17 +55,8 @@ private extension ViewController {
     
     func setupSubParts() {
         let subDataList = SampleDataFactory.makeSubDataList()
-        subDataList.enumerated().forEach { (index, data) in
-            subImageViews[index].image = UIImage(named: data.imageName)
-            subNameLabels[index].text = data.name
-            subCategoryLabels[index].text = data.category
-            subOutlineLabels[index].text = data.outlineText
-        }
-        
-        subBaseViews.forEach { view in
-            view.layer.cornerRadius = 6.0
-            view.layer.borderWidth = 1.0
-            view.layer.borderColor = UIColor.darkGray.cgColor
+        subCardViews.enumerated().forEach { (index, subcardView) in
+            subcardView.configure(withSampleData: subDataList[index])
         }
     }
 }
