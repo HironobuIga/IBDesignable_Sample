@@ -14,6 +14,8 @@
 		1E907A8B21F06F0A007744B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E907A8921F06F0A007744B7 /* LaunchScreen.storyboard */; };
 		1E907A9721F41738007744B7 /* SampleDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E907A9621F41738007744B7 /* SampleDataFactory.swift */; };
 		1E907A9921F41768007744B7 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E907A9821F41768007744B7 /* SampleData.swift */; };
+		1E907A9C21F42644007744B7 /* SubCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E907A9B21F42644007744B7 /* SubCardView.xib */; };
+		1E907A9E21F4290B007744B7 /* SubCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E907A9D21F4290B007744B7 /* SubCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1E907A8C21F06F0A007744B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E907A9621F41738007744B7 /* SampleDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDataFactory.swift; sourceTree = "<group>"; };
 		1E907A9821F41768007744B7 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		1E907A9B21F42644007744B7 /* SubCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCardView.xib; sourceTree = "<group>"; };
+		1E907A9D21F4290B007744B7 /* SubCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		1E907A9421F06FCA007744B7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1E907A9A21F42609007744B7 /* View */,
 				1E907A8221F06F09007744B7 /* ViewController.swift */,
 				1E907A8421F06F09007744B7 /* ViewController.storyboard */,
 			);
@@ -100,6 +105,15 @@
 				1E907A9821F41768007744B7 /* SampleData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1E907A9A21F42609007744B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E907A9D21F4290B007744B7 /* SubCardView.swift */,
+				1E907A9B21F42644007744B7 /* SubCardView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +177,7 @@
 				1E907A8B21F06F0A007744B7 /* LaunchScreen.storyboard in Resources */,
 				1E907A8821F06F0A007744B7 /* Assets.xcassets in Resources */,
 				1E907A8621F06F09007744B7 /* ViewController.storyboard in Resources */,
+				1E907A9C21F42644007744B7 /* SubCardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E907A9E21F4290B007744B7 /* SubCardView.swift in Sources */,
 				1E907A9721F41738007744B7 /* SampleDataFactory.swift in Sources */,
 				1E907A8321F06F09007744B7 /* ViewController.swift in Sources */,
 				1E907A8121F06F09007744B7 /* AppDelegate.swift in Sources */,

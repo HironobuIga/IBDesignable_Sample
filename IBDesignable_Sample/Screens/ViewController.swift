@@ -31,7 +31,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         setupBaseParts()
         setupMainParts()
-        setupSubParts()
+        setupSubParts()        
     }
     
     override func viewDidAppear(_ animated: Bool) {
