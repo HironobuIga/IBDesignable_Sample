@@ -6,11 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "sakura_picture.png",
+      "filename" : "sakura_picture@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "sakura_picture@3x.png",
       "scale" : "3x"
     }
   ],
