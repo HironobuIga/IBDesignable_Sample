@@ -26,7 +26,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aed-N0-HYA" userLabel="Card View">
                     <rect key="frame" x="16" y="10" width="403" height="138"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sakura_picture" translatesAutoresizingMaskIntoConstraints="NO" id="G3S-6u-RBd">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G3S-6u-RBd">
                             <rect key="frame" x="8" y="10" width="80" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="6G4-06-27q"/>
@@ -117,7 +117,4 @@
             <point key="canvasLocation" x="1176.8" y="-524.43778110944527"/>
         </view>
     </objects>
-    <resources>
-        <image name="sakura_picture" width="789" height="1052.383544921875"/>
-    </resources>
 </document>
