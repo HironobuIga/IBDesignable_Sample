@@ -121,7 +121,6 @@
                                                         <real key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="name" value="さくら"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="cat_picture"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="sakura_picture"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="category" value="バラ科モモ亜科スモモ属"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="outlineText" value="Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample"/>
@@ -141,7 +140,6 @@
                                                         <real key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="name" value="フクロウ"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="cat_picture"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="hukurou_picture"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="outlineText" value="Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="category" value="鳥綱フクロウ目フクロウ科フクロウ属"/>
@@ -161,7 +159,6 @@
                                                         <real key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="name" value="シカ"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="cat_picture"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="shika_picture"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="outlineText" value="Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="category" value="哺乳綱偶蹄目シカ科シカ属"/>
@@ -181,7 +178,6 @@
                                                         <real key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="name" value="バナナ"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="cat_picture"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="banana_picture"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="outlineText" value="Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="category" value="バショウ科バショウ属"/>
