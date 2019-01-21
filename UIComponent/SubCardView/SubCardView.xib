@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubCardView" customModule="IBDesignable_Sample" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubCardView" customModule="UIComponent">
             <connections>
                 <outlet property="cardView" destination="aed-N0-HYA" id="y0C-PQ-gcJ"/>
                 <outlet property="categoryLabel" destination="lzP-7l-wzf" id="ADw-uu-N8w"/>
@@ -26,7 +26,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aed-N0-HYA" userLabel="Card View">
                     <rect key="frame" x="16" y="10" width="403" height="138"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sakura_picture" translatesAutoresizingMaskIntoConstraints="NO" id="G3S-6u-RBd">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G3S-6u-RBd">
                             <rect key="frame" x="8" y="10" width="80" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="6G4-06-27q"/>
@@ -55,10 +55,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddn-TZ-UVS" userLabel="Category  Base View">
-                                    <rect key="frame" x="0.0" y="23.5" width="299" height="45.5"/>
+                                    <rect key="frame" x="0.0" y="23.5" width="299" height="44.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="バラ科モモ亜科スモモ属" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzP-7l-wzf">
-                                            <rect key="frame" x="8" y="4" width="283" height="37.5"/>
+                                            <rect key="frame" x="8" y="4" width="283" height="36.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -73,10 +73,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcv-My-X4h" userLabel="Outline Base View">
-                                    <rect key="frame" x="0.0" y="69" width="299" height="49"/>
+                                    <rect key="frame" x="0.0" y="68" width="299" height="50"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample Sample" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efq-wV-F8L" userLabel="Outline Text Label">
-                                            <rect key="frame" x="8" y="4" width="283" height="41"/>
+                                            <rect key="frame" x="8" y="4" width="283" height="42"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -117,7 +117,4 @@
             <point key="canvasLocation" x="1176.8" y="-524.43778110944527"/>
         </view>
     </objects>
-    <resources>
-        <image name="sakura_picture" width="789" height="1052.383544921875"/>
-    </resources>
 </document>
