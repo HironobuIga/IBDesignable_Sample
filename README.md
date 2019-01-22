@@ -25,4 +25,4 @@ This project is licensed under the MIT License
 
 This repository is sample of slide below.
 
-https://www.slideshare.net/secret/CXtr3njFnccSm
+https://www.slideshare.net/IgaHironobu/20190122-hironobu-iga-1
